@@ -19,8 +19,7 @@ jobs:
           go mod init example.com/m/v2
           go mod tidy
           go get .
-          go get example.com/octo-examplemodule
-          go get example.com/octo-examplemodule@v1.3.4
+
 
       - name: Build
         run: go build -v ./...
