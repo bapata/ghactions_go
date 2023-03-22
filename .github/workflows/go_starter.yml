@@ -16,7 +16,8 @@ jobs:
           
       - name: Install dependencies
         run: |
-          go mod init example.com/octo-examplemodule
+          go mod init example.com/myrepo
+          go mod tidy
           go get .
           go get example.com/octo-examplemodule
           go get example.com/octo-examplemodule@v1.3.4
