@@ -31,7 +31,7 @@ jobs:
         run: yamllint hostgroup_ex.yaml
         
       - name: Run build script
-        run: ./.github/scripts/build.sh
+        run: ./.github/scripts/myscript1.bash
         shell: bash
 
 
