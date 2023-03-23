@@ -1,0 +1,4 @@
+--
+hostgroup1:
+  - host1
+  - host2
