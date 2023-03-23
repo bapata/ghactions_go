@@ -17,7 +17,6 @@ jobs:
           
       - name: Install dependencies
         run: |
-          go mod init example.com/m/v2
           go mod tidy
           go get .
 
