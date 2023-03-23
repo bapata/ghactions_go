@@ -27,7 +27,7 @@ jobs:
       - name: Test
         run: go test -v ./...
         
-        name: Validate-YAML
+      - name: Validate-YAML
         run: yamllint hostgroup_ex.yaml
 
 
