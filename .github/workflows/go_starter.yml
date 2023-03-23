@@ -3,12 +3,6 @@ name: Go package
 on: [push]
 
 jobs:
-  validate-yaml:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-        run: yamllint hostgroup_ex.yaml
-        
   build:
     runs-on: ubuntu-latest
     steps:
@@ -34,5 +28,6 @@ jobs:
         run: go test -v ./...
         
         name: Validate-YAML
+        run: yamllint hostgroup_ex.yaml
 
 
