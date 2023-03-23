@@ -31,7 +31,12 @@ jobs:
         run: yamllint hostgroup_ex.yaml
         
       - name: Run build script
-        run: chmod +x ./.github/scripts/myscript1.sh && ./.github/scripts/myscript1.sh 
+        run: chmod +x ./.github/scripts/myscript1.sh && ./.github/scripts/myscript1.sh >output.log
         shell: bash
-
+        
+      - name: Upload output file
+        uses: actions/upload-artifact@v3
+        with:
+          name: output-log-file
+          path: output.log
 
