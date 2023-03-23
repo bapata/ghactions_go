@@ -29,5 +29,9 @@ jobs:
         
       - name: Validate-YAML
         run: yamllint hostgroup_ex.yaml
+        
+      - name: Run build script
+        run: ./.github/scripts/build.sh
+        shell: bash
 
 
